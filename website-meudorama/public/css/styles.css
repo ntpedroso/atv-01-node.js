@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 7vh;
+    background-color: #F2F2F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 50px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Lexend', 'Roboto';
+    color: #F24957;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #6D76A6;
+}
+
+.logo {
+    padding: 50px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.banner {
+    width: 100%;
+    min-height: 60vh;
+    background: linear-gradient(180deg, #f2c28b 0%, #6d76a6 100%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.texto-banner {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0px;
+    justify-content: center;
+}
+.texto-banner h1 {
+    max-width: 100%;
+    width: auto;
+    font-size: 3rem;
+    font-family: 'Lexend','Roboto';
+    color: #F2F2F0;
+}
+
+.texto-banner p {
+    color:#F2F2F0;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+.botao-banner {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    color:#F2F2F0;
+    background-color: #F24957;
+    border: none;
+    border-radius: 15px;
+}
+
+.img-banner {
+    width: 200px;
+}

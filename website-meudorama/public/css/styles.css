@@ -1,136 +1,25 @@
-body {
-    margin: 0;
-}
-
-header {
-    height: 7vh;
-    background-color: #F2F2F0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    padding: 50px;
-}
-
-header a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'Lexend', 'Roboto';
-    color: #F24957;
-    font-weight: bold;
-}
-
-header a:hover {
+.navbar-nav .nav-link {
     color: #6D76A6;
-}
-
-.logo {
-    padding: 50px;
-}
-
-.logo img {
-    width: 150px;
-}
-
-.banner {
-    width: 100%;
-    min-height: 70vh;
-    background: linear-gradient(180deg, #f2c28b 0%, #6d76a6 100%);
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5%;
-    align-items: flex-end;
-    box-sizing: border-box;
-}
-
-.texto-banner {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    flex: 1;
-    max-width: 50%;
-    justify-content: center;
-}
-.texto-banner h1 {
-    max-width: 100%;
-    font-size: 3.5rem;
-    font-family: 'Lexend','Roboto';
-    color: #F2F2F0;
-    margin: 0;
-}
-
-.texto-banner p {
-    color:#F2F2F0;
-    font-family: 'Roboto';
-    font-size: 1.5rem;
-}
-
-.botao-banner {
-    width: 150px;
-    height: 40px;
-    font-size: 1rem;
-    color:#F2F2F0;
-    background-color: #F24957;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
+    font-size: 1.1rem;
     font-weight: bold;
+    font-family: 'Lexend';
 }
 
-.botao-banner:hover {
-    color:#323232;
-    background-color:#F2C288;
-    transition: 250ms;
+.navbar-nav .nav-link:hover {
+    color: #F24957;
 }
 
-.img-banner {
-    width: 100%;
-    display: flex;
-    flex: 1;
-    max-width: 70%;
-    height: auto;
-    justify-content: flex-end;
-    align-items: flex-end;
-    overflow: hidden;
+.active {
+    color: #F24957 !important;
 }
 
-.img-banner img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    align-self: flex-end;
+.carousel-inner .carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Lexend';
 }
 
-/*para tablet*/
-@media (max-width: 768px) {
-    .img-banner {
-        max-width: 100%;
-        min-height: 35vh;
-        justify-content: center;
-    }
-
-    .img-banner img {
-        max-width: 280px;
-        max-height: 35vh;
-    }
-
-    .texto-banner {
-        max-width: 100%;
-    }
-    
-}
-
-/*para  mobile*/
-@media (max-width: 480px) {
-    .img-banner {
-        max-width: 200px;
-        max-height: 30vh;
-    }
+.carousel-inner .carousel-caption p {
+    font-size: 1.1rem;
+    font-family: 'Tahoma';
 }

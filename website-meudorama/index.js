@@ -28,3 +28,31 @@ app.listen(port, (error) => {
     console.log(`Servidor iniciado com sucesso no endereço http://localhost:${port}`);
   }
 });
+
+app.get("/doramas", function(req,res) {
+
+  const doramas = [
+    {
+      nome: "Pretendente Surpresa",
+      descricao: "pequena descrição",
+      qtd_avaliacao: 1200,
+      favoritos: 1200,
+      imagem: "/imgs/pretendente.jpg"
+    }
+  ];
+  res.render("doramas", {
+    doramas : doramas
+  });
+});
+
+app.get("/atores", function(req,res) {
+  res.render("atores");
+});
+
+app.get("/noticias", function(req,res) {
+  res.render("noticias");
+});
+
+app.get("/contato", function(req,res) {
+  res.render("contato");
+});

@@ -23,3 +23,53 @@
     font-size: 1.1rem;
     font-family: 'Tahoma';
 }
+
+
+.card-dorama {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: none; 
+}
+
+
+.card-dorama:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important; 
+}
+
+
+.card-dorama:hover .card-img-top {
+    filter: brightness(1.1); 
+}
+#banner-meio .caption-jisoo {
+    left: 5% !important;
+    right: auto !important;
+    bottom: 15% !important;
+    max-width: 450px;
+    text-align: left !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+#banner-meio .caption-jisoo h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-family: 'Lexend';
+}
+
+#banner-meio .caption-jisoo p{
+    line-height: 1.1;
+    font-family: 'Tahoma';
+}
+
+
+@media (max-width: 768px) {
+    #banner-meio .caption-jisoo {
+        width: 80%;
+        left: 5% !important;
+        bottom: 10% !important;
+    }
+    #banner-meio .caption-jisoo h1 {
+        font-size: 2rem;
+    }
+}

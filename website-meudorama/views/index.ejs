@@ -1,24 +1,25 @@
 <%- include ('partials/header.ejs')%>
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imgs/banner-1.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>KDRAMA DO MOMENTO</h5>
-        <p>Conheça Beijo Explosivo: o queridinho do momento.</p>
-      </div>
+<section>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-item">
-      <img src="imgs/banner-beijo-explosivo.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imgs/banner-1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>KDRAMA DO MOMENTO</h5>
+          <p>Conheça Beijo Explosivo: o queridinho do momento.</p>
+        </div>
       </div>
+    <div class="carousel-item">
+        <img src="imgs/banner-beijo-explosivo.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
     </div>
     <div class="carousel-item">
       <img src="imgs/banner-1.png" class="d-block w-100" alt="...">
@@ -27,65 +28,104 @@
         <p>Some representative placeholder content for the third slide.</p>
       </div>
     </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+</section>
 
 <section class="container my-5">
-    <div class="container mt-5 mb-4">
-        <div class="d-flex align-items-center">
-            <h2 class="fw-bold me-3">Doramas Populares</h2>
-            <div class="flex-grow-1 border-bottom border-2" style="opacity: 0.2;"></div>
-        </div>
+  <div class="container mt-5 mb-4">
+      <div class="d-flex align-items-center">
+          <h2 class="fw-bold me-3">Doramas Populares</h2>
+          <div class="flex-grow-1 border-bottom border-2" style="opacity: 0.2;"></div>
+      </div>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item  me-3">
+        <a class="page-link" href="#">Ver todos</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="row my-2">
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card card-dorama" style="width: 18rem;">
+              <img src="imgs/sorriso.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Sorriso Real</h5>
+                  <button type="button" class="btn btn-light">
+                    <img src="imgs/icons/heart.png"> 255
+                  </button>
+                  <button type="button" class="btn btn-light">
+                    <img src="imgs/icons/star.png"> 913
+                  </button>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card card-dorama" style="width: 18rem;">
+              <img src="imgs/pretendente.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Pretendente Surpresa</h5>
+                  <button type="button" class="btn btn-light">
+                    <img src="imgs/icons/heart.png"> 234
+                  </button>
+                  <button type="button" class="btn btn-light">
+                    <img src="imgs/icons/star.png"> 1832
+                  </button>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card card-dorama" style="width: 18rem;">
+              <img src="imgs/demonio.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Meu demônio favorito</h5>
+                  <button type="button" class="btn btn-light">
+                    <img src="imgs/icons/heart.png"> 304
+                  </button>
+                  <button type="button" class="btn btn-light">
+                    <img src="imgs/icons/star.png"> 2139
+                  </button>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card card-dorama" style="width: 18rem;">
+              <img src="imgs/pousando.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Pousando no Amor</h5>
+                  <button type="button" class="btn btn-light">
+                    <img src="imgs/icons/heart.png"> 528
+                  </button>
+                  <button type="button" class="btn btn-light">
+                    <img src="imgs/icons/star.png"> 3230
+                  </button>
+              </div>
+          </div>
+      </div>
     </div>
-    <div class="row my-5">
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card" style="width: 18rem;">
-                <img src="imgs/sorriso.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sorriso Real</h5>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card" style="width: 18rem;">
-                <img src="imgs/pretendente.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pretendente Surpresa</h5>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card" style="width: 18rem;">
-                <img src="imgs/demonio.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Meu demônio favorito</h5>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card" style="width: 18rem;">
-                <img src="imgs/pousando.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pousando no Amor</h5>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                </div>
-            </div>
-        </div>
-    </div>
+</section>
+
+<section class="container-fluid px-0 my-5">
+  <div id="banner-meio" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="imgs/banner-secao.png" class="d-block w-100" style="height: 60vh; object-fit: cover;">
+              <div class="carousel-caption text-start caption-jisoo">
+                  <h1 class="display-3 fw-bold">Namorado por Assinatura</h1>
+                  <p>uma jovem descobre um serviço personalizado que cria o namorado dos sonhos, mas o romance da vida real está mais próximo do que ela imagina.</p>
+                  <a href="#" class="btn btn-primary btn-lg mt-3">Confira o trailer</a>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 <%- include ('partials/footer.ejs')%>

@@ -77,3 +77,13 @@
 body {
     padding-top: 70px; 
 }
+
+.breadcrumb a {
+    text-decoration: none;
+    color:#F24957;
+    font-weight: bold;
+}
+
+.active {
+    color: #212529 !important;
+}

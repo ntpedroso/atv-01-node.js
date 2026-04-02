@@ -1,9 +1,33 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/navbar.ejs') %>
 
-<section class="container mt-5">
+<div class="container-fluid p-0 position-relative d-flex align-items-center" style="height: 200px; overflow: hidden;">
+    <img src="imgs/banner-titulo.png" class="position-absolute w-100 h-100" style="object-fit: cover; z-index: 1;" alt="Banner">
     
-    <h1 class="mb-4">Doramas</h1>
+   <div class="container h-100 position-relative d-flex align-items-center justify-content-between" style="z-index: 2;">
+
+      <div class="d-flex flex-column">
+         <h1 class="text-white fw-bold m-0">Todos os Doramas</h1>
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb m-0">
+               <li class="breadcrumb-item"><a href="/">Home</a></li>
+               <li class="breadcrumb-item active" aria-current="page">Doramas</li>
+            </ol>
+         </nav>
+      </div>
+
+      <div class="d-flex align-items-end" style="min-width: 250px;">
+         <select class="form-select form-select-sm" aria-label="Filtrar doramas">
+            <option selected>Filtrar por gênero</option>
+            <option value="1">Comédia Romântica</option>
+            <option value="2">Ação</option>
+            <option value="3">Drama</option>
+         </select>
+      </div>
+
+   </div>
+</div>
+<section class="container mt-5">
 
     <div class="row g-4"> <% doramas.forEach(function(dorama) { %>
         <div class="col-12 col-xl-6"> 

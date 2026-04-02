@@ -1,0 +1,74 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+<div class="container-fluid p-0 position-relative d-flex align-items-center" style="height: 200px; overflow: hidden;">
+    <img src="imgs/banner-titulo.png" class="position-absolute w-100 h-100" style="object-fit: cover; z-index: 1;" alt="Banner">
+    
+   <div class="container h-100 position-relative d-flex align-items-center justify-content-between" style="z-index: 2;">
+
+      <div class="d-flex flex-column">
+         <h1 class="text-white fw-bold m-0">Atores</h1>
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb m-0">
+               <li class="breadcrumb-item"><a href="/">Home</a></li>
+               <li class="breadcrumb-item active" aria-current="page">Atores</li>
+            </ol>
+         </nav>
+      </div>
+   </div>
+</div>
+
+<section class="container mt-5">
+<div class="container mt-5">
+    
+    <div class="card mb-4 border-0 shadow-sm overflow-hidden" style="border-radius: 15px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="URL_DA_SUA_IMAGEM_1" class="img-fluid h-100 w-100" style="object-fit: cover; min-height: 250px;" alt="Dorama 1">
+            </div>
+            
+            <div class="col-md-8">
+                <div class="card-body d-flex flex-column h-100 p-4">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="card-title fw-bold">Nome do Dorama</h4>
+                        <span class="badge rounded-pill bg-danger align-self-start">Novo</span>
+                    </div>
+                    
+                    <p class="card-text text-muted mt-2">
+                        Aqui vai a descrição comprida do seu dorama. Ao usar o sistema de colunas do Bootstrap, 
+                        o texto fica ao lado da imagem no computador e embaixo dela no celular automaticamente.
+                    </p>
+
+                    <div class="mt-auto d-flex justify-content-between align-items-center">
+                        <div class="text-secondary small">
+                            <i class="bi bi-tag-fill me-1"></i> Comédia Romântica
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4 border-0 shadow-sm overflow-hidden" style="border-radius: 15px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="URL_DA_SUA_IMAGEM_2" class="img-fluid h-100 w-100" style="object-fit: cover; min-height: 250px;" alt="Dorama 2">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body d-flex flex-column h-100 p-4">
+                    <h4 class="card-title fw-bold">Outro Título de Dorama</h4>
+                    <p class="card-text text-muted mt-2">Descrição do segundo dorama aqui...</p>
+                    <div class="mt-auto d-flex justify-content-between align-items-center">
+                        <div class="text-secondary small">
+                            <i class="bi bi-tag-fill me-1"></i> Drama / Ação
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<%- include ('partials/footer.ejs') %>

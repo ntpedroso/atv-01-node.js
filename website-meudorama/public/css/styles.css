@@ -109,3 +109,36 @@ body {
     background-color: #6D76A6 !important; 
     color:#ffffff !important;
 }
+
+/* Estilo geral das abas laterais */
+.nav-pills .nav-link {
+    color: #495057; /* Cor do texto quando não clicado */
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Cor quando você clica ou a aba está ativa (SEU CORAL) */
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+    background-color: #F24957 !important; /* Sua cor coral */
+    color: white !important;
+}
+
+/* Remove aquela borda azul de "foco" que aparece ao clicar */
+.nav-link:focus, .btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Efeito ao passar o mouse antes de clicar */
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: #fff1f2; /* Um rosa bem clarinho */
+    color: #F24957;
+}
+
+/* Estilo para borda tracejada na coleção */
+.border-dashed {
+    border: 2px dashed #dee2e6 !important;
+}

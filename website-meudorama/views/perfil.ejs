@@ -1,0 +1,119 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/navbar.ejs') %>
+
+<div class="container-fluid p-0 position-relative d-flex align-items-center" style="height: 200px; overflow: hidden;">
+    <img src="imgs/banner-titulo.png" class="position-absolute w-100 h-100" style="object-fit: cover; z-index: 1;" alt="Banner">
+    
+   <div class="container h-100 position-relative d-flex align-items-center justify-content-between" style="z-index: 2;">
+
+      <div class="d-flex flex-column">
+         <h1 class="text-white fw-bold m-0">Perfil</h1>
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb m-0">
+               <li class="breadcrumb-item"><a href="/">Home</a></li>
+               <li class="breadcrumb-item active" aria-current="page">Perfil</li>
+            </ol>
+         </nav>
+      </div>
+   </div>
+</div>
+
+<main class="bg-light pb-5" style="margin-top: 90px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                    <div class="card-body p-0">
+                        <div class="p-4 text-center border-bottom bg-white">
+                            <img src="/imgs/profile.jpg" class="rounded-circle border border-3 mb-3" style="width: 100px; height: 100px; object-fit: cover; border-color: #F24957 !important;">
+                            <h5 class="fw-bold mb-0">Natasha Pedroso</h5>
+                            <small class="text-muted">@natasha_dorameira</small>
+                        </div>
+                        
+                        <div class="nav flex-column nav-pills p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active mb-2 text-start d-flex align-items-center" id="v-pills-perfil-tab" data-bs-toggle="pill" data-bs-target="#v-pills-perfil" type="button" role="tab">
+                                <i class="bi bi-person-fill me-3"></i> Meu Perfil
+                            </button>
+                            <button class="nav-link mb-2 text-start d-flex align-items-center" id="v-pills-colecao-tab" data-bs-toggle="pill" data-bs-target="#v-pills-colecao" type="button" role="tab">
+                                <i class="bi bi-collection-play-fill me-3"></i> Minha Coleção
+                            </button>
+                            <button class="nav-link mb-2 text-start d-flex align-items-center" id="v-pills-ajustes-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ajustes" type="button" role="tab">
+                                <i class="bi bi-gear-fill me-3"></i> Ajustes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content card border-0 shadow-sm rounded-4 p-4" id="v-pills-tabContent">
+                    
+                    <div class="tab-pane fade show active" id="v-pills-perfil" role="tabpanel">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4 class="fw-bold mb-0">Informações Pessoais</h4>
+                            <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-pencil-square me-2"></i>Editar</button>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="text-muted d-block small text-uppercase fw-bold">Nome Completo</label>
+                                <p class="fs-5">Natasha Pedroso de Oliveira</p>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-block small text-uppercase fw-bold">Nascimento</label>
+                                <p class="fs-5">15/07/1998 (27 anos)</p>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-block small text-uppercase fw-bold">Gênero Favorito</label>
+                                <span class="badge rounded-pill px-3 py-2" style="background-color: #F24957;">Romance</span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-block small text-uppercase fw-bold">Localização</label>
+                                <p class="fs-5">São Paulo, SP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-colecao" role="tabpanel">
+                        <h4 class="fw-bold mb-4">Favoritos</h4>
+                        <div class="row g-3">
+                            <div class="col-md-3 col-6">
+                                <img src="/imgs/demonio.png" class="img-fluid rounded shadow-sm border">
+                            </div>
+                            <div class="col-md-3 col-6 d-flex align-items-center justify-content-center border border-dashed rounded bg-light" style="min-height: 150px;">
+                                <a href="/doramas" class="text-decoration-none text-muted">+</a>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-3 col-6">
+                                <img src="/imgs/demonio.png" class="img-fluid rounded shadow-sm border">
+                            </div>
+                            <div class="col-md-3 col-6 d-flex align-items-center justify-content-center border border-dashed rounded bg-light" style="min-height: 150px;">
+                                <a href="/doramas" class="text-decoration-none text-muted">+</a>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-3 col-6">
+                                <img src="/imgs/demonio.png" class="img-fluid rounded shadow-sm border">
+                            </div>
+                            <div class="col-md-3 col-6 d-flex align-items-center justify-content-center border border-dashed rounded bg-light" style="min-height: 150px;">
+                                <a href="/doramas" class="text-decoration-none text-muted">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-ajustes" role="tabpanel">
+                        <h4 class="fw-bold mb-4">Privacidade</h4>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="checkNotif" checked>
+                            <label class="form-check-label" for="checkNotif">Receber notificações de doramas</label>
+                        </div>
+                        <button class="btn btn-danger mt-3">Excluir Conta</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/footer.ejs') %>

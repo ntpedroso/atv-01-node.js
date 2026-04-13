@@ -7,10 +7,12 @@ const app = express();
 import DoramaController from "./controllers/DoramaController.js";
 import AtoresController from "./controllers/AtoresController.js";
 import NoticiaController from "./controllers/NoticiaController.js";
+import PerfilController from "./controllers/PerfilController.js";
 
 app.use("/", DoramaController);
 app.use("/", AtoresController);
 app.use("/", NoticiaController);
+app.use("/", PerfilController);
 
 
 //configurando o EJS - o set serve para configurar algo

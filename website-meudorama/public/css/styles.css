@@ -132,7 +132,6 @@ body {
     box-shadow: none !important;
 }
 
-/* Efeito ao passar o mouse antes de clicar */
 .nav-pills .nav-link:hover:not(.active) {
     background-color: #fff1f2; /* Um rosa bem clarinho */
     color: #F24957;
@@ -141,4 +140,60 @@ body {
 /* Estilo para borda tracejada na coleção */
 .border-dashed {
     border: 2px dashed #dee2e6 !important;
+}
+
+/* Garante que a legenda fique sempre visível e com contraste */
+.carousel-caption {
+    z-index: 10;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo dos Cards Individuais */
+.top-card {
+    background: #6D76A6; /* Transparência suave sobre o azul #6D76A6 */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.top-card:hover {
+    transform: scale(1.03);
+    border-color: #F24957; /* Borda vermelha no hover para destacar */
+}
+
+/* Números Vazados com Contorno Vermelho */
+.top-number {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    color: transparent;
+    /* Cor de contorno vermelha como solicitado */
+    -webkit-text-stroke: 1.5px #FFFFFF; 
+    min-width: 70px;
+    text-align: center;
+    line-height: 1;
+}
+
+/* Ajuste dos Textos */
+.top-card h6 {
+    color: #ffffff !important;
+}
+
+.text-white-50 {
+    color: #FFFFFF !important;
+}
+
+/* Posters das miniaturas */
+.img-mini-poster {
+    width: 60px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }

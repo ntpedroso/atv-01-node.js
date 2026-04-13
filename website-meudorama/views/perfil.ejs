@@ -25,9 +25,11 @@
                 <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
                     <div class="card-body p-0">
                         <div class="p-4 text-center border-bottom bg-white">
-                            <img src="/imgs/profile.jpg" class="rounded-circle border border-3 mb-3" style="width: 100px; height: 100px; object-fit: cover; border-color: #F24957 !important;">
-                            <h5 class="fw-bold mb-0">Natasha Pedroso</h5>
-                            <small class="text-muted">@natasha_dorameira</small>
+                            <% perfil.forEach(function(profile) { %>
+                            <img src="<%- profile.imagem %>" class="rounded-circle border border-3 mb-3" style="width: 100px; height: 100px; object-fit: cover; border-color: #F24957 !important;">
+                            <h5 class="fw-bold mb-0"><%- profile.nome %></h5>
+                            <small class="text-muted"><%- profile.usuario %></small>
+                            <% }); %>
                         </div>
                         
                         <div class="nav flex-column nav-pills p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -53,44 +55,38 @@
                             <h4 class="fw-bold mb-0">Informações Pessoais</h4>
                             <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-pencil-square me-2"></i>Editar</button>
                         </div>
+                        <% perfil.forEach(function(profile) { %>
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <label class="text-muted d-block small text-uppercase fw-bold">Nome Completo</label>
-                                <p class="fs-5">Natasha Pedroso de Oliveira</p>
+                                <p class="fs-5"><%- profile.nome %></p>
                             </div>
                             <div class="col-md-6">
                                 <label class="text-muted d-block small text-uppercase fw-bold">Nascimento</label>
-                                <p class="fs-5">15/07/1998 (27 anos)</p>
+                                <p class="fs-5"><%- profile.data_nasc %></p>
                             </div>
                             <div class="col-md-6">
                                 <label class="text-muted d-block small text-uppercase fw-bold">Gênero Favorito</label>
-                                <span class="badge rounded-pill px-3 py-2" style="background-color: #F24957;">Romance</span>
+                                <span class="badge rounded-pill px-3 py-2" style="background-color: #F24957;"><%- profile.genero %></span>
                             </div>
                             <div class="col-md-6">
                                 <label class="text-muted d-block small text-uppercase fw-bold">Localização</label>
-                                <p class="fs-5">São Paulo, SP</p>
+                                <p class="fs-5"><%- profile.localizacao %></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-block small text-uppercase fw-bold">Usuário</label>
+                                <p class="fs-5"><%- profile.usuario %></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-block small text-uppercase fw-bold">E-mail</label>
+                                <p class="fs-5"><%- profile.email %></p>
                             </div>
                         </div>
+                        <% }); %>
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-colecao" role="tabpanel">
                         <h4 class="fw-bold mb-4">Favoritos</h4>
-                        <div class="row g-3">
-                            <div class="col-md-3 col-6">
-                                <img src="/imgs/demonio.png" class="img-fluid rounded shadow-sm border">
-                            </div>
-                            <div class="col-md-3 col-6 d-flex align-items-center justify-content-center border border-dashed rounded bg-light" style="min-height: 150px;">
-                                <a href="/doramas" class="text-decoration-none text-muted">+</a>
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-md-3 col-6">
-                                <img src="/imgs/demonio.png" class="img-fluid rounded shadow-sm border">
-                            </div>
-                            <div class="col-md-3 col-6 d-flex align-items-center justify-content-center border border-dashed rounded bg-light" style="min-height: 150px;">
-                                <a href="/doramas" class="text-decoration-none text-muted">+</a>
-                            </div>
-                        </div>
                         <div class="row g-3">
                             <div class="col-md-3 col-6">
                                 <img src="/imgs/demonio.png" class="img-fluid rounded shadow-sm border">

@@ -1,22 +1,31 @@
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary"  style="background-color: #F2F2F0;"">
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color: #F2F2F0;">
     <div class="container-fluid px-5">
-        <a class="navbar-brand" href="#">
-        <img src="imgs/logo-principal.png" alt="meudorama">
+        <a class="navbar-brand" href="/">
+            <img src="/imgs/logo-principal.png" alt="meudorama" style="max-height: 40px;">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav gap-5">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/doramas">Doramas</a>
-            <a class="nav-link" href="/atores">Atores</a>
-            <a class="nav-link" href="/noticias">Notícias</a>
-            <a class="nav-link" href="/contato">Contato</a>
-        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto gap-lg-5 gap-3 align-items-center">
+                <a class="nav-link fw-semibold" href="/">Home</a>
+                <a class="nav-link fw-semibold" href="/doramas">Doramas</a>
+                <a class="nav-link fw-semibold" href="/atores">Atores</a>
+                <a class="nav-link fw-semibold" href="/noticias">Notícias</a>
+                <a class="nav-link fw-semibold" href="/contato">Contato</a>
+                
+                <a class="nav-link p-0 ms-lg-2" href="/perfil">
+                    <img src="/imgs/perfil-usuario.jpg" 
+                         alt="Perfil" 
+                         class="rounded-circle border border-1" 
+                         style="width: 42px; height: 42px; object-fit: cover; border-color: #F24957 !important;">
+                </a>
+            </div>
         </div>
     </div>
-    </nav>
+</nav>
 </header>

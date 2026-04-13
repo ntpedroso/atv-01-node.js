@@ -1,0 +1,84 @@
+<%- include ('partials/header.ejs')%>
+<%- include ('partials/navbar.ejs')%>
+
+<div class="container-fluid p-0 position-relative d-flex align-items-center" style="height: 200px; overflow: hidden;">
+    <img src="imgs/banner-titulo.png" class="position-absolute w-100 h-100" style="object-fit: cover; z-index: 1;" alt="Banner">
+    
+   <div class="container h-100 position-relative d-flex align-items-center justify-content-between" style="z-index: 2;">
+
+      <div class="d-flex flex-column">
+         <h1 class="text-white fw-bold m-0">Contato</h1>
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb m-0">
+               <li class="breadcrumb-item"><a href="/">Home</a></li>
+               <li class="breadcrumb-item active" aria-current="page">Contato</li>
+            </ol>
+         </nav>
+      </div>
+   </div>
+</div>
+
+<section class="container mb-5">
+   <div class="row g-5">
+      <div class="col-lg-5">
+         <h2 class="fw-bold mb-4" style="color: #F24957;">Fale com a nossa equipe</h2>
+         <p class="text-muted mb-4">Tem alguma dúvida, sugestão de dorama ou quer anunciar no nosso portal? Preencha o formulário ao lado ou entre em contato pelos nossos canais oficiais.</p>
+
+      <div class="d-flex align-items-center mb-3">
+         <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+         <i class="bi bi-geo-alt-fill" style="color: #F24957;"></i>
+         </div>
+         <span>São Paulo, Brasil</span>
+      </div>
+
+      <div class="d-flex align-items-center mb-3">
+         <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+         <i class="bi bi-envelope-paper-heart-fill" style="color: #F24957;"></i>
+         </div>
+         <span>meudorama@gmail.com</span>
+      </div>
+
+      <hr class="my-4">
+      <h5 class="fw-bold mb-3">Siga-nos:</h5>
+      <div class="d-flex gap-3">
+         <a href="#" class="btn btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></a>
+         <a href="#" class="btn btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></a>
+         <a href="#" class="btn btn-outline-secondary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+      </div>
+   </div>
+
+   <div class="col-lg-7">
+      <div class="card border-0 shadow-sm p-4 rounded-4">
+         <form action="/enviar-contato" method="POST">
+            <div class="row">
+               <div class="col-md-6 mb-3">
+                  <label class="form-label fw-semibold">Seu Nome</label>
+                  <input type="text" class="form-control bg-light border-0" placeholder="Nome completo" required>
+               </div>
+               <div class="col-md-6 mb-3">
+                  <label class="form-label fw-semibold">E-mail</label>
+                  <input type="email" class="form-control bg-light border-0" placeholder="exemplo@email.com" required>
+               </div>
+            </div>
+            <div class="mb-3">
+               <label class="form-label fw-semibold">Assunto</label>
+               <select class="form-select bg-light border-0">
+                  <option selected>Sugestão de Dorama</option>
+                  <option value="1">Parceria</option>
+                  <option value="2">Erro no Site</option>
+                  <option value="3">Outros</option>
+               </select>
+            </div>
+            <div class="mb-4">
+               <label class="form-label fw-semibold">Sua Mensagem</label>
+               <textarea class="form-control bg-light border-0" rows="5" placeholder="Como podemos te ajudar?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg w-100 text-white fw-bold py-3" style="background-color: #F24957; border-radius: 10px;">
+            Enviar Mensagem
+            </button>
+         </form>
+         </div>
+      </div>
+   </div>
+</section>
+<%- include ('partials/footer.ejs')%>

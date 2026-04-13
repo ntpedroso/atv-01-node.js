@@ -87,3 +87,25 @@ body {
 .active {
     color: #212529 !important;
 }
+
+.btn-red {
+    background-color: #F24957 !important;
+    color: #ffffff !important;
+    transition: 0.5s !important;
+}
+
+.btn-red:hover {
+    background-color: #F2C288 !important; 
+    color:#212529 !important;
+}
+
+.btn-red-blue {
+    background-color: #F24957 !important;
+    color: #ffffff !important;
+    transition: 0.5s !important;
+}
+
+.btn-red-blue:hover {
+    background-color: #6D76A6 !important; 
+    color:#ffffff !important;
+}

@@ -1,25 +1,40 @@
 <footer class="container-fluid" style="background-color: #F24957;">
     <div class="container">
-        <div class="row">
-            <div class="col mb-5 mt-5">
+        <div class="row pt-5 pb-5"> <div class="col-lg-5 col-md-6 mb-4">
                 <span class="d-inline-block">
-                    <img src="/imgs/logo-alternativa-3.png">
+                    <img src="/imgs/logo-alternativa-3.png" alt="Logo Meu Dorama">
                 </span>
-                <p class="my-5 text-light">
+                <p class="my-4 text-light pe-md-5">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum modi, possimus dolore saepe nobis itaque cupiditate veniam nostrum, provident quam, nequeab dicta velit debitis cum unde recusandae. Fuga, consectetur.
                 </p>
 
-                <span class="d-inline-block d-flex gap-4">
+                <div class="d-flex gap-4">
                     <a href=""><img src="/imgs/icons/insta.png"></a>
                     <a href=""><img src="/imgs/icons/facebook.png"></a>
                     <a href=""><img src="/imgs/icons/twitter.png"></a>
-                </span>
+                </div>
             </div>
-            <div class="col mt-5">
-                <h4 class="text-light">
-                    Menu
-                </h4>
+
+            <div class="col-lg-3 col-md-6 mb-4 text-light">
+                <h4 class="fw-bold mb-4">CONTATO</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2">São Paulo, Brasil</li>
+                    <li class="mb-2">meudorama@gmail.com</li>
+                    <li class="mb-2">+55 11 99999-9999</li>
+                </ul>
             </div>
+
+            <div class="col-lg-4 col-md-12 mb-4 text-light">
+                <h4 class="fw-bold mb-4">NEWSLETTER</h4>
+                <p>Receba novidades por e-mail:</p>
+                <form action="/subscribe" method="POST" class="input-group">
+                    <input type="email" class="form-control border-0" placeholder="Seu e-mail" required style="height: 45px;">
+                    <button class="btn btn-dark px-4" type="submit" style="background-color: #1a1a1a; border: none;">
+                        OK
+                    </button>
+                </form>
+            </div>
+
         </div>
     </div>
 </footer>
